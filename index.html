@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avinash Resume Chat Bot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-window" id="chat-window"></div>
+    <div class="input-container">
+      <select id="predefined-questions" onchange="selectQuestion()">
+        <option value="">Select a question...</option>
+        <option value="What is your name?">What is your name?</option>
+        <option value="What is your email?">What is your email?</option>
+        <option value="What is your phone number?">What is your phone number?</option>
+        <option value="Where are you located?">Where are you located?</option>
+        <option value="What is your LinkedIn profile?">What is your LinkedIn profile?</option>
+        <option value="What are your skills?">What are your skills?</option>
+        <option value="What languages do you speak?">What languages do you speak?</option>
+        <option value="What are your interests?">What are your interests?</option>
+        <option value="What is your work experience?">What is your work experience?</option>
+        <option value="What is your education?">What is your education?</option>
+        <option value="What are your strengths?">What are your strengths?</option>
+        <option value="What are your weaknesses?">What are your weaknesses?</option>
+        <!-- Add more predefined questions here -->
+      </select>
+      <button class="new-chat-button" onclick="startNewChat()">New Chat</button>
+    </div>
+    <div class="message-input-container">
+      <input type="text" id="user-input" placeholder="Type your question here..." onkeydown="handleKeyPress(event)">
+      <button class="send-button" onclick="sendMessage()">➡️</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
